@@ -6,22 +6,14 @@
           revision="thirteen"
           review="gerrit.pixelexperience.org" />
 
-  <remote name="pixel-plus"
-          fetch="https://github.com/PixelExperience"
-          revision="thirteen-plus"
-          review="gerrit.pixelexperience.org" />
-
   <remote name="pixel-gitlab"
           fetch="https://gitlab.pixelexperience.org/android"
           revision="thirteen" />
 
-  <remote name="pixel-devices"
-          fetch="https://github.com/PixelExperience-Devices"
-          revision="thirteen" />
+  <remote name="firefly"
+          fetch="https://github.com/FiireflyUI"
+          revision="aosp-13" />
 
-  <remote name="pixel-devices-blobs"
-          fetch="https://gitlab.pixelexperience.org/android/vendor-blobs"
-          revision="thirteen" />
 
   <!-- External repos -->
   <project path="external/avb" name="external_avb" remote="pixel" />
@@ -42,8 +34,8 @@
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="pixel" />
-  <project path="frameworks/base" name="frameworks_base" remote="pixel-plus" />
-  <project path="frameworks/native" name="frameworks_native" remote="pixel-plus" />
+  <project path="frameworks/base" name="frameworks_base" remote="firefly" />
+  <project path="frameworks/native" name="frameworks_native" remote="firefly" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="pixel" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="pixel" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="pixel" />
@@ -70,7 +62,7 @@
   <project path="development" name="development" remote="pixel" />
   <project path="device/google/cuttlefish" name="device_google_cuttlefish" remote="pixel" />
   <project path="kernel/configs" name="kernel_configs" remote="pixel" />
-  <project path="manifest" name="manifest" remote="pixel-plus" />
+  <project path="manifest" name="platform_manifest" remote="firefly" />
   <project path="libcore" name="libcore" remote="pixel" />
   <project path="platform_testing" name="platform_testing" remote="pixel" />
 
@@ -110,12 +102,12 @@
   <project path="packages/apps/CarrierConfig" name="packages_apps_CarrierConfig" remote="pixel" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
   <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="pixel" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="pixel-plus" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="firefly" />
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="pixel" />
   <project path="packages/apps/Traceur" name="packages_apps_Traceur" remote="pixel" />
   <project path="packages/modules/adb" name="packages_modules_adb" remote="pixel" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="pixel" />
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="pixel-plus" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="firefly" />
   <project path="packages/modules/DnsResolver" name="packages_modules_DnsResolver" remote="pixel" />
   <project path="packages/modules/NetworkStack" name="packages_modules_NetworkStack" remote="pixel" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="pixel" />
@@ -123,7 +115,7 @@
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="pixel" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="pixel" />
   <project path="packages/services/BuiltInPrintService" name="packages_services_BuiltInPrintService" remote="pixel" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="pixel-plus" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="firefly" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="pixel" />
 
   <!-- Prebuilts -->
